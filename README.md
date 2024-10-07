@@ -159,7 +159,7 @@ Select **"Reboot now"**. Here we choose to reboot later as we are going to make 
 ### 5. **Conclusion**
    - This project successfully demonstrated the creation of a VM on VirtualBox with Windows Server 2022 operating system.
 
-### 12. **Contact Information**
+### 6. **Contact Information**
    - **Name**: Rogério Muhate
    - **Email**: rbmuhate@gmail.com
    - **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/rmuhate)
