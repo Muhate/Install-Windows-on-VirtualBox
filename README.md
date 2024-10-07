@@ -1,151 +1,163 @@
-# Install-Windows-on-VirtualBox
-
-# Create Ubuntu 24.04 server LTS Virtual Machine on VirtualBox
+# Create Windows server 2022 Virtual Machine on VirtualBox
 
 ### 1. Description
 
-This project aims to demonstrate how to create a Ubuntu 24.04 Server Virtual Machine on Oracle VirtualBox.
+This project aims to demonstrate how to create a Windows server 2022 Virtual Machine on Oracle VirtualBox.
 
 ### 2. Objectives
 
-- Set up a VM with Ubuntu Operating system.
+- Set up a VM with Windows server 2022 Operating system.
 
 ### 3. Tools and Technologies Used
 
 - **VirtualBox**: Used for creating virtual machines for the lab environment.
-- **Ubuntu Server 24.04 LTS**: Used as a monitored system.
+- **Windows server 2022**: Created as a VM.
 
 
 ### 4. Installation Steps
    
-First, we need to download the ISO file from the Ubuntu official webpage, so we go <a href="https://ubuntu.com/download/server">here</a> and click the button shown below to download the ISO.
+First, we need to download the ISO file from the Microsoft official webpage, so we go <a href="https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022">here</a> and click the **"Download the ISO"** hyperlink, shown below.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/a2ba2766-e299-41df-858f-c4f99ea56dbe" alt="Download the Ubuntu ISO" width="500"/>
+  <img src="https://github.com/user-attachments/assets/685c3d6c-a1e9-4974-9419-d26c264516f5" alt="Download the windows ISO" width="500"/>
 </p>
+
+Another page will be opened, fill the form according to your details and click the **"Download Now"** button.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1ab24875-9d16-4b09-b4c4-3899fa2d789c" alt="Form to be filled" width="500"/>
+</p>
+
 
    - **4.1. Create the VM on VirtualBox**
 
-Open VirtualBox, then click Machine => New, then folow the steps indicated in the image below.
+Open VirtualBox, then click Machine => New, to create a new VM.
 
 <p align="center">
-<img width="520" alt="VM creation on VirtualBox" src="https://github.com/user-attachments/assets/c117c240-884e-4d46-82c9-d95eeee406e6">
+<img width="520" alt="VM creation on VirtualBox" src="https://github.com/user-attachments/assets/6bd9b8aa-9ccd-4043-a38e-0447c02f8f65">
 </p>
 
-   - **4.2. Connect the VM to the correct interface**
 
-Before starting the machine, choose the NAT Network created <a href="https://github.com/Muhate/Setting-Up-VirtualBox/blob/main/README.md">here</a>. For that, just folow the steps indicated in the image below. By the end start the machine.
+Fill with the information of your choice, in this case the name is Windows Server 2022. Do not forget to select the option **"Skip Unattended Installation"** to prevent the VM to start before finishing our configurations.
 
 <p align="center">
-<img width="520" alt="VM creation on VirtualBox" src="https://github.com/user-attachments/assets/0d59c54d-125a-41db-bff1-36347506704d">
+<img width="520" alt="VM name" src="https://github.com/user-attachments/assets/9f974b9b-c8af-4684-b9dd-420087079337">
 </p>
 
-   - **4.2. Configure the VM**
-
-After starting the VM, let's configure it. When you're prompted with the screen below, choose ***Try or Install Ubuntu Server**. If nothing is happening, try to click any place inside the black screen.
+Allocate enough memory and CPU and then click **"Finish"**
 
 <p align="center">
-<img width="520" alt="Start the installation" src="https://github.com/user-attachments/assets/42348668-1753-4918-ac4e-e9cf912b0787">
+<img width="520" alt="RAM and CPU" src="https://github.com/user-attachments/assets/580e9a85-f0c3-455a-8821-a529c0e7c1fc">
 </p>
 
-Choose the language for the installation process and hit "ENTER"
+Make sure you select the VM and follow the steps indicated in the image below. In the end click the **"Star"** button.
 
 <p align="center">
-<img width="520" alt="Language Selection" src="https://github.com/user-attachments/assets/a561141c-c2fb-4a83-a1c6-fbdbe730a715">
+<img width="520" alt="Start VM" src="https://github.com/user-attachments/assets/0fa558d3-473e-47ea-b638-fdf92fcb2f2b">
 </p>
 
-Select the keyboard of your preference or that you are using, select **"Done"** and hit **"ENTER"**.
+Select language for the installation, the time and currency formats and the keyboard language, then click **"Next"**
 
 <p align="center">
-<img width="520" alt="Language Selection" src="https://github.com/user-attachments/assets/471f2b49-f3af-485b-ad74-1c74f01bb509">
+<img width="520" alt="Language configuration" src="https://github.com/user-attachments/assets/7fd26ac1-b919-4fe9-ac33-b96fa1f9c5bd">
 </p>
 
-Choose the type of installation, in this lab we choose **"Ubuntu Server"**, select **"Done"** and hit **"ENTER"**.
+Click **"Install now"** as shown below.
 
 <p align="center">
-<img width="520" alt="Installation Selection" src="https://github.com/user-attachments/assets/99ea9b69-118f-47af-9a83-d4613dad51db">
+<img width="520" alt="Install button" src="https://github.com/user-attachments/assets/b904c56e-6d13-4711-abe0-42bb8db1a85e">
 </p>
 
-Configure the network, select **"Done"** and hit **"ENTER"**. You can skip this step or let it be configured dynamically. Here it was configured manually.
+select the OS to install and click **"Next"**. Here we selected **"Windows Server 2022 Standard Evaluation (Desktop Experience)"**.
 
 <p align="center">
-<img width="520" alt="Network configuration" src="https://github.com/user-attachments/assets/fc4a8ba8-29df-4f17-965b-c06d0bd4335b">
+<img width="520" alt="OS selection" src="https://github.com/user-attachments/assets/16a4d9eb-a796-451a-9755-8a0b2c38579d">
 </p>
 
-No proxy is required, so just select **"Done"** and hit **"ENTER"**.
+Agree with the license terms and click **"Next"**.
 
 <p align="center">
-<img width="520" alt="Proxy configuration" src="https://github.com/user-attachments/assets/33d5c4c2-be08-4e6d-b5b8-4cc249d2b17e">
+<img width="520" alt="License terms" src="https://github.com/user-attachments/assets/47edebbe-80c9-45c5-8351-809ee4d467a0">
 </p>
 
-Nothing to change, keep the default Ubuntu mirror, select **"Done"** and hit **"ENTER"**.
+Choose the type of installation, here we choose **"Custom: Install Microsoft Server Operating System only (advanced)"**, so click on it.
 
 <p align="center">
-<img width="520" alt="Mirror configuration" src="https://github.com/user-attachments/assets/fe1d235d-d369-44c1-b2fd-b4c0baa117a6">
+<img width="520" alt="Type of installation" src="https://github.com/user-attachments/assets/d7f57adf-58ae-4664-a432-7a1e6dad1020">
 </p>
 
-Select **"Continue"** and hit **"ENTER"**.
+In the next screen just click **"Next"**
 
 <p align="center">
-<img width="520" alt="Mirror check" src="https://github.com/user-attachments/assets/0c569dbe-6f0c-4b3f-884c-32e39c79068c">
+<img width="520" alt="where to install the OS" src="https://github.com/user-attachments/assets/c5779e32-f539-4358-8415-d85bc6c77cc4">
 </p>
 
-The default configurations for the storage are fine, just select **"Done"** and hit **"ENTER"**.
+Finally click **"Reboot now"**
 
 <p align="center">
-<img width="520" alt="Storage configuration" src="https://github.com/user-attachments/assets/9d9ce1e3-579f-4629-9832-585d100170f3">
+<img width="520" alt="Reboot" src="https://github.com/user-attachments/assets/65ac004f-a90d-4642-af4e-5d4949fc9026">
 </p>
 
-Review the storage configurations, if they are good select **"Done"** and hit **"ENTER"**.
+Type and retype the password for the user **"Administrator"** and click **"Finish"**
 
 <p align="center">
-<img width="520" alt="Storage configuration review" src="https://github.com/user-attachments/assets/59d9f252-8ba4-44cf-bd55-aef1b7f004a4">
+<img width="520" alt="Admin password" src="https://github.com/user-attachments/assets/d69018e9-6e47-4569-8511-667c4975453f">
 </p>
 
-Read the warning and if you are confortable with the storage configurations, just select **"Continue"** and hit **"ENTER"**.
+Let us login to the VM, follow the steps indicated in the image down below.
 
 <p align="center">
-<img width="520" alt="Storage configuration warning" src="https://github.com/user-attachments/assets/a6aa04db-b0d5-4ba7-a5d6-8f5e9b2a6e80">
+<img width="520" alt="Login" src="https://github.com/user-attachments/assets/c3a30c1a-eb0f-46e0-8161-06c572e77213">
 </p>
 
-Configure your profile accordingly, select **"Done"** and hit **"ENTER"**.
+Now we are going to enable the **"Copy and Paste"** from the guest to host and vice-versa.
 
 <p align="center">
-<img width="520" alt="Profile configuration" src="https://github.com/user-attachments/assets/90fa6dac-64df-45e3-ac08-fec0b46e10b7">
+<img width="520" alt="Enable copy & paste" src="https://github.com/user-attachments/assets/32dcb5d9-8fc6-461e-bcec-7f3a98319109">
 </p>
 
-Skip the Ubuntu Pro installation, select **"Continue"** and hit **"ENTER"**.
-
 <p align="center">
-<img width="520" alt="Ubuntu Pro" src="https://github.com/user-attachments/assets/94fd94c2-44a2-4099-bba9-06281fc41aea">
+<img width="520" alt="Enable copy & paste" src="https://github.com/user-attachments/assets/08fb7009-0582-40a3-bf38-4a47e1666269">
 </p>
 
-Select to install OpenSSH Server, select **"Done"** and hit **"ENTER"**.
+Now install the VirtualBox Guest Additions, follow the steps shown below. After those operations, the disk on number 3 will appear, double click it.
 
 <p align="center">
-<img width="520" alt="Ubuntu Pro" src="https://github.com/user-attachments/assets/1d17e548-a47e-46a6-8a74-afe5c74f6391">
+<img width="520" alt="Guest Additions installation" src="https://github.com/user-attachments/assets/fc444874-5be3-4180-93b5-2aa2b2d144be">
 </p>
 
-In the Featured server snaps, just hit **"tab"** to select **"Done"** and hit **"ENTER"**.
+Right click the file shown in the image and Run as administrator to install the VirtualBox Guest Additions.
 
 <p align="center">
-<img width="520" alt="Featured server snaps" src="https://github.com/user-attachments/assets/ae39f29f-94fc-4c23-905d-44ac27b42a15">
+<img width="520" alt="Run the executable file" src="https://github.com/user-attachments/assets/adbc5f36-230b-4930-b6b0-96167765fedb">
 </p>
 
-Let the installation occur and when finished, select **"Reboot now"** and hit **"ENTER"**.
+Click **"Next"** to proceed with the installation.
 
 <p align="center">
-<img width="520" alt="Installation complete" src="https://github.com/user-attachments/assets/a15abeef-8f2c-454c-9f75-b1c4ae6473d5">
+<img width="520" alt="Run the executable file" src="https://github.com/user-attachments/assets/e6c81ca1-760a-4fa3-91c5-3c50da975a2c">
 </p>
 
-When prompted with the screen below, just hit **"ENTER"**.
+Choose the folder where to install the guest additions and click **"Next"** to proceed.
 
 <p align="center">
-<img width="520" alt="enter to reboot" src="https://github.com/user-attachments/assets/023b529e-592d-4104-9ee9-ae3347916b9d">
+<img width="520" alt="Run the executable file" src="https://github.com/user-attachments/assets/691d7da2-54f8-4f35-9b81-713b8dc32faa">
+</p>
+
+Choose the components to install and click **"Install"** to proceed.
+
+<p align="center">
+<img width="520" alt="Run the executable file" src="https://github.com/user-attachments/assets/d7bee40f-5c82-41ea-8820-4c3f2a66af1e">
+</p>
+
+Select **"Reboot now"**. Here we choose to reboot later as we are going to make some other configurations.
+
+<p align="center">
+<img width="520" alt="Run the executable file" src="https://github.com/user-attachments/assets/7d5a8770-b372-41cd-80c9-f93fc6c2e99c">
 </p>
 
 ### 5. **Conclusion**
-   - This project successfully demonstrated the creation of a VM on VirtualBox with Ubuntu 24.04 Server operating system.
+   - This project successfully demonstrated the creation of a VM on VirtualBox with Windows Server 2022 operating system.
 
 ### 12. **Contact Information**
    - **Name**: Rogério Muhate
